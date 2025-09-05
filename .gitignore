@@ -1,0 +1,44 @@
+# Node / JS
+node_modules/
+*.log
+*.tsbuildinfo
+.next/
+.next-standalone/
+dist/
+build/
+coverage/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+.env.*
+.mlflow/
+
+# Java/Kotlin/Gradle
+.gradle/
+build/
+out/
+*.iml
+
+# Rust
+/target/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Kubernetes / Terraform
+*.tfstate*
+.terraform/
+.kube/
+
+# Docs generated
+/docs/INDEX.md
+
+# Misc
+*.swp
