@@ -1,0 +1,17 @@
+name: Docs Validation
+
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
+
+jobs:
+  validate-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Validate docs and index
+        run: |
+          bash tools/docs/validate_docs.sh
+          bash tools/docs/check_docs.sh
